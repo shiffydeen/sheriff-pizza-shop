@@ -19,6 +19,10 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // ✅ Disable warning for unescaped entities like apostrophes in JSX
+      "react/no-unescaped-entities": "off",
+    },
   },
 ];
 
