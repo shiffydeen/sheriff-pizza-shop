@@ -177,7 +177,7 @@ export default function Footer() {
                     123 Pizza Street
                   </p>
                   <p className='text-gray-500 text-xs md:text-sm'>
-                    Downtown, NY 10001
+                    Downtown, LA 10001
                   </p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function Footer() {
                 </div>
                 <div className='text-left'>
                   <p className='text-gray-900 font-medium text-sm md:text-base'>
-                    +1 (555) 123-PIZZA
+                    +234 80 123-PIZZA
                   </p>
                   <p className='text-gray-500 text-xs md:text-sm'>
                     24/7 Order Hotline
