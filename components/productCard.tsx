@@ -4,24 +4,24 @@ import Link from 'next/link';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 import { IProduct } from '@/types/product';
-// import useCartStore from '@/stores/cartStore';
+import useCartStore from '@/stores/cartStore';
 import { toast } from 'sonner';
 
 const ProductCard = ({ product }: { product: IProduct }) => {
-//   const addToCart = useCartStore((state) => state.addToCart);
-//   const handleAddToCart = (product: IProduct) => {
-//     addToCart({
-//       id: product.id,
-//       name: product.attributeValues.p_title.value || 'Product',
-//       price: product.attributeValues.p_price.value || 0,
-//       quantity: 1,
-//       image: product.attributeValues.p_image.value.downloadLink,
-//     });
-//     toast('Added to Cart', {
-//       description: `${product.attributeValues.p_title.value} has been added to your cart.`,
-//       duration: 5000,
-//     });
-//   };
+  const addToCart = useCartStore((state) => state.addToCart);
+  const handleAddToCart = (product: IProduct) => {
+    addToCart({
+      id: product.id,
+      name: product.attributeValues.p_title.value || 'Product',
+      price: product.attributeValues.p_price.value || 0,
+      quantity: 1,
+      image: product.attributeValues.p_image.value.downloadLink,
+    });
+    toast('Added to Cart', {
+      description: `${product.attributeValues.p_title.value} has been added to your cart.`,
+      duration: 5000,
+    });
+  };
   return (
     <div className='group relative h-full'>
       <div className='relative overflow-hidden h-full flex flex-col rounded-3xl shadow-lg border border-orange-200/50 dark:border-orange-800/50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm hover:shadow-xl transition-shadow duration-300 hover:border-orange-300 dark:hover:border-orange-600'>
@@ -99,13 +99,13 @@ const ProductCard = ({ product }: { product: IProduct }) => {
                     : 'bg-gray-400 dark:bg-gray-600 text-gray-200 cursor-not-allowed opacity-60'
                 }`}
                 disabled={availableAttr !== 'Available'}
-                // onClick={() => {
-                //   if (availableAttr === 'Available') {
-                //     handleAddToCart(product);
-                //   } else {
-                //     toast.error('This product is currently unavailable.');
-                //   }
-                // }}
+                onClick={() => {
+                  if (availableAttr === 'Available') {
+                    handleAddToCart(product);
+                  } else {
+                    toast.error('This product is currently unavailable.');
+                  }
+                }}
               >
                 <ShoppingCart className='w-5 h-5 mr-2' />
                 {availableAttr === 'Available'
