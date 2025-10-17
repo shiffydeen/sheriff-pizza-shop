@@ -83,7 +83,7 @@ export default function HomePage() {
                   </span>
                   <br />
                   <span className='bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 bg-clip-text text-transparent'>
-                    Delivered Hot! 🍕
+                    In Lagos! 🍕
                   </span>
                 </h1>
 
@@ -184,7 +184,7 @@ export default function HomePage() {
           <div className='text-center mb-12 sm:mb-16'>
             <h2 className='text-3xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4'>
               <span className='bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent'>
-                Why Choose SahandPizza?
+                Why Choose Deeny's Pizza?
               </span>
             </h2>
             <p className='text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-4'>

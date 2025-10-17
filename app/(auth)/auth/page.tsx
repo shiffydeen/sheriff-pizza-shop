@@ -148,8 +148,8 @@ function AuthForm() {
             </h2>
             <p className='text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto px-2'>
               {isSignUp
-                ? 'Join SahandPizza today and discover exclusive deals on authentic Italian cuisine delivered hot to your door!'
-                : 'Welcome back to SahandPizza! Log in to continue your delicious journey with us.'}
+                ? "Join Deeny's Pizza today and discover exclusive deals on authentic Italian cuisine delivered hot to your door!"
+                : "Welcome back to Deeny's Pizza! Log in to continue your delicious journey with us."}
             </p>
           </div>
 
@@ -216,7 +216,7 @@ function AuthForm() {
                       </span>
                     </div>
                   ) : isSignUp ? (
-                    'Join SahandPizza Family! 🍕'
+                    "Join Deeny's Family! 🍕"
                   ) : (
                     'Welcome Back! 🎉'
                   )}
@@ -230,7 +230,7 @@ function AuthForm() {
             <p className='text-sm xs:text-base sm:text-lg text-gray-600 dark:text-gray-300 text-center'>
               {isSignUp
                 ? 'Already part of our pizza family?'
-                : 'New to SahandPizza?'}
+                : "New to Deeny's Pizza?"}
             </p>
             <Button
               variant='link'
