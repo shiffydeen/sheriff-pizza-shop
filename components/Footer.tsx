@@ -71,7 +71,7 @@ export default function Footer() {
               <div>
                 <h2 className='text-xl md:text-2xl font-black'>
                   <span className='bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent'>
-                    Deeny's Pizza
+                    {`Deeny's`} Pizza
                   </span>
                 </h2>
                 <p className='text-xs md:text-sm text-gray-500'>
@@ -290,7 +290,7 @@ export default function Footer() {
         <div className='container mx-auto px-4 py-4 md:py-6'>
           <div className='flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0'>
             <div className='flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6 text-gray-500 text-xs md:text-sm text-center'>
-              <p>&copy; 2024 Deeny's Pizza. All rights reserved.</p>
+              <p>&copy; 2024 {`Deeny's`} Pizza. All rights reserved.</p>
               <div className='flex flex-wrap justify-center space-x-3 md:space-x-4'>
                 <Link
                   href='/privacy'
