@@ -314,7 +314,7 @@ export default function Footer() {
             </div>
             <div className='flex items-center space-x-2 text-gray-500 text-xs md:text-sm'>
               <Heart className='h-4 w-4 md:h-5 md:w-5 text-red-500' />
-              <span>Made with love in New York</span>
+              <span>Made with love in Lagos</span>
             </div>
           </div>
         </div>

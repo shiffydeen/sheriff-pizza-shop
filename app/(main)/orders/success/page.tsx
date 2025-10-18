@@ -64,7 +64,7 @@ export default function OrderSuccess() {
 
         <div className='text-center space-y-6'>
           <p className='text-lg text-gray-600 dark:text-gray-300 font-semibold'>
-            Thank you for choosing SahandPizza! 🙏
+            Thank you for choosing Deeny's Pizza! 🙏
           </p>
 
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
